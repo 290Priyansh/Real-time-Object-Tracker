@@ -19,9 +19,6 @@ while True:
     else:
         cv2.putText(img," Lost ",(75,75),cv2.FONT_HERSHEY_COMPLEX,0.7,(0,0,255),2)
         
-
-
-
     fps = cv2.getTickFrequency()/(cv2.getTickCount()-timer)
     cv2.putText(img,str(int(fps)),(75,50),cv2.FONT_HERSHEY_COMPLEX,0.7,(0,0,255),2)
     cv2.imshow("track",img)
